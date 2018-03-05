@@ -24,8 +24,15 @@ const languageResource = {
             'HELLO_WORLD': 'Hallo Welt',
             'TRY_AGAIN': 'Sorry, bitte versuchen Sie es später noch einmal'
         }
+    },
+    'fr-FR': {
+        'translation': {
+            'HELLO_WORLD': 'Bonjour',
+            'TRY_AGAIN': "Désolé, je n'ai pas compris"
+        }
     }
 };
+
 
 /**
  *  example callback function sent to the handler.converse function, change this function to suit your needs
@@ -78,19 +85,27 @@ let evaluationCallback = function(result, evaluationResponse, context, err) {
             result = ['Nlu engine did not return an output'];
         }
         evaluationResponse.send(result[0]);
+        console.log("result : " + result);
+        console.log("evaluation response : " );
+        console.log(evaluationResponse);
+        console.log("context : ");
+        console.log(context);
     }
 };
 
 // Actions for DEFAULT state
 const stateDefaultActions = handler.createActionsHandler({
 
-    // this is an example of an intent using a regex engine, the intent catches the phrase "hello"
-    'hello-world': (request, response, context) => {
-        response.say(handler.t('HELLO_WORLD')).send();
+    'information': (request, response, context) => {
+        handler.converse(request, response, context, converseCallback);
     },
-    //this is an example of an intent using wcs - in order for this to work you need your own wcs workspace and intents
-    //and change the intents name with your own
-    'hello-world-wcs': (request, response, context) => {
+    'allumer': (request, response, context) => {
+        handler.converse(request, response, context, converseCallback);
+    },
+    'eteindre': (request, response, context) => {
+        handler.converse(request, response, context, converseCallback);
+    },
+    'aurevoir': (request, response, context) => {
         handler.converse(request, response, context, converseCallback);
     },
     'unhandled': (request, response, context) => {

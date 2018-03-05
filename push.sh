@@ -1,10 +1,8 @@
+ YML=manifest
 
- YML="<your manifest file name>"
+ SPACE=Watson Assistant
 
-
- SPACE="<your target space>"
-
- ORGANIZATION="<your bluemix organization>"
+ ORGANIZATION=acospain
 
 
   bx target -s $SPACE -o $ORGANIZATION

@@ -1,5 +1,15 @@
 {
-  "hello-world" : {
+  "allumer" : {
+		"visibility" : "always",
+		"entities" : [
+		]
+	},
+  "eteindre" : {
+		"visibility" : "always",
+		"entities" : [
+		]
+	},
+  "information" : {
 		"visibility" : "always",
 		"entities" : [
 		]

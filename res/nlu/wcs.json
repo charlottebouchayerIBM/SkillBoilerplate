@@ -1,15 +1,15 @@
 {
   "workspace": {
-    "en-US": {
-      "name": "your workspace name",
-      "workspace_id": "your workspace id"
+    "fr-FR": {
+      "name": "securite",
+      "workspace_id": "268da9af-3b8e-4ea6-8f05-ca055e5246dc"
     }
   },
   "credentials": {
-    "url": "your wcs url",
-    "version": "your wcs version",
-    "version_date": "your wcs version date",
-    "password": "your wcs password",
-    "username": "your wcs username"
+  "username": "3f3d977b-77a1-4db4-96ad-2f8dad8c5fa9",
+  "password": "PoBMopbY3CIk",
+  "url": "https://gateway-fra.watsonplatform.net/conversation/api",
+  "version" : "v1",
+  "version_date": "2017-06-14"
   }
 }

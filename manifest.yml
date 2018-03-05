@@ -4,7 +4,7 @@ applications:
   no-route: false
   memory: 128M
   instances: 1
-  domain: mybluemix.net
-  name: <<name of the skill. example: my-skill>>
-  host: <<url to skill. example: my-skill. this would become "my-skill.mybluemix.net">>
+  domain: eu-de.mybluemix.net
+  name: Expertise_Securite
+  host: acospain-fr-expertise-securite
 disk_quota: 256M
